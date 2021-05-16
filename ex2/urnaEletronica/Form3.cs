@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace urnaEletronica
 {
-    public partial class Form1 : Form
+    public partial class Form3 : Form
     {
-        public Form1()
+        public Form3()
         {
             InitializeComponent();
-        }
-
-        private void exibirRelatórioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void contabilizarNovoVotoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }

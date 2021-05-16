@@ -1,0 +1,12 @@
+C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\bin\Debug\urnaEletronica.exe.config
+C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\bin\Debug\urnaEletronica.exe
+C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\bin\Debug\urnaEletronica.pdb
+C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\obj\Debug\urnaEletronica.csprojAssemblyReference.cache
+C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\obj\Debug\urnaEletronica.Properties.Resources.resources
+C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\obj\Debug\urnaEletronica.csproj.GenerateResource.cache
+C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\obj\Debug\urnaEletronica.csproj.CoreCompileInputs.cache
+C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\obj\Debug\urnaEletronica.exe
+C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\obj\Debug\urnaEletronica.pdb
+C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\obj\Debug\urnaEletronica.Form1.resources
+C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\obj\Debug\urnaEletronica.Form2.resources
+C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\obj\Debug\urnaEletronica.Form3.resources
