@@ -30,6 +30,13 @@ namespace WindowsFormsApp2
         private void InitializeComponent()
         {
             this.dados = new System.Windows.Forms.DataGridView();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Endereço = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.empresa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -39,13 +46,6 @@ namespace WindowsFormsApp2
             this.abrirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.salvarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Endereço = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.empresa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dados)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +66,41 @@ namespace WindowsFormsApp2
             this.dados.TabIndex = 0;
             this.dados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dados_CellContentClick);
             // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            // 
+            // Endereço
+            // 
+            this.Endereço.HeaderText = "Telefone";
+            this.Endereço.Name = "Endereço";
+            // 
+            // Telefone
+            // 
+            this.Telefone.HeaderText = "Email";
+            this.Telefone.Name = "Telefone";
+            // 
+            // email
+            // 
+            this.email.HeaderText = "Endereço";
+            this.email.Name = "email";
+            // 
+            // cidade
+            // 
+            this.cidade.HeaderText = "cidade";
+            this.cidade.Name = "cidade";
+            // 
+            // estado
+            // 
+            this.estado.HeaderText = "estado";
+            this.estado.Name = "estado";
+            // 
+            // empresa
+            // 
+            this.empresa.HeaderText = "empresa";
+            this.empresa.Name = "empresa";
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(349, 552);
@@ -77,7 +112,7 @@ namespace WindowsFormsApp2
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(505, 552);
+            this.button2.Location = new System.Drawing.Point(497, 552);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 24);
             this.button2.TabIndex = 2;
@@ -93,6 +128,7 @@ namespace WindowsFormsApp2
             this.button3.TabIndex = 3;
             this.button3.Text = "Adicionar";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // abrir
             // 
@@ -138,41 +174,6 @@ namespace WindowsFormsApp2
             this.sairToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.sairToolStripMenuItem.Text = "&Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
-            // 
-            // Nome
-            // 
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            // 
-            // Endereço
-            // 
-            this.Endereço.HeaderText = "Telefone";
-            this.Endereço.Name = "Endereço";
-            // 
-            // Telefone
-            // 
-            this.Telefone.HeaderText = "Email";
-            this.Telefone.Name = "Telefone";
-            // 
-            // email
-            // 
-            this.email.HeaderText = "Endereço";
-            this.email.Name = "email";
-            // 
-            // cidade
-            // 
-            this.cidade.HeaderText = "cidade";
-            this.cidade.Name = "cidade";
-            // 
-            // estado
-            // 
-            this.estado.HeaderText = "estado";
-            this.estado.Name = "estado";
-            // 
-            // empresa
-            // 
-            this.empresa.HeaderText = "empresa";
-            this.empresa.Name = "empresa";
             // 
             // Form2
             // 
