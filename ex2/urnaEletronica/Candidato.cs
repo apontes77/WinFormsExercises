@@ -6,21 +6,23 @@ using System.Threading.Tasks;
 
 namespace urnaEletronica
 {
-    class Candidato
+   public class Candidato
     {
         public string nome { get; set; }
         public int numeroCandidato { get; set; }
         public string foto { get; set; }
         public string partido { get; set; }
+        public int qtdeVotos { get; set; }
 
         public Candidato (){ }
 
-        public Candidato(string nome, int numeroCandidato, string foto, string partido)
+        public Candidato(string nome, int numeroCandidato, string foto, string partido, int qtdeVotos)
         {
             this.nome = nome;
             this.numeroCandidato = numeroCandidato;
             this.foto = foto;
             this.partido = partido;
+            this.qtdeVotos = qtdeVotos;
         }
     }
 }

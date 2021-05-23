@@ -84,10 +84,7 @@ namespace urnaEletronica
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem reiniciarUrnaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem inserirNovoVotoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exibirRelatórioToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem contabilizarNovoVotoToolStripMenuItem;
