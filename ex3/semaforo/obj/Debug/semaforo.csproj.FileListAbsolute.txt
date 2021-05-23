@@ -1,0 +1,10 @@
+C:\Users\alepq\source\repos\ferramentas_visuais\ex3\semaforo\bin\Debug\semaforo.exe.config
+C:\Users\alepq\source\repos\ferramentas_visuais\ex3\semaforo\bin\Debug\semaforo.exe
+C:\Users\alepq\source\repos\ferramentas_visuais\ex3\semaforo\bin\Debug\semaforo.pdb
+C:\Users\alepq\source\repos\ferramentas_visuais\ex3\semaforo\obj\Debug\semaforo.csprojAssemblyReference.cache
+C:\Users\alepq\source\repos\ferramentas_visuais\ex3\semaforo\obj\Debug\semaforo.Form1.resources
+C:\Users\alepq\source\repos\ferramentas_visuais\ex3\semaforo\obj\Debug\semaforo.Properties.Resources.resources
+C:\Users\alepq\source\repos\ferramentas_visuais\ex3\semaforo\obj\Debug\semaforo.csproj.GenerateResource.cache
+C:\Users\alepq\source\repos\ferramentas_visuais\ex3\semaforo\obj\Debug\semaforo.csproj.CoreCompileInputs.cache
+C:\Users\alepq\source\repos\ferramentas_visuais\ex3\semaforo\obj\Debug\semaforo.exe
+C:\Users\alepq\source\repos\ferramentas_visuais\ex3\semaforo\obj\Debug\semaforo.pdb
