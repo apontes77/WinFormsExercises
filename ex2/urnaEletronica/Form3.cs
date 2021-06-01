@@ -94,7 +94,12 @@ namespace urnaEletronica
 
         private void button1_Click(object sender, EventArgs e)
         {
-            encerraSessaoEAbreEstatisticas();
+            pictureBox2.ImageLocation = "..\\..\\imagens\\fim.png";
+
+            textBox1.Text = "";
+            label1.Text = "";
+            label2.Text = "";
+            label3.Text = "";
         }
 
         private void encerraSessaoEAbreEstatisticas()
@@ -102,6 +107,11 @@ namespace urnaEletronica
             MessageBox.Show("Sessão Encerrada!");
             Form2 form2 = new Form2(this);
             form2.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
