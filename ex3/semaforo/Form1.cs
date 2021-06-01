@@ -53,7 +53,6 @@ namespace semaforo
                 timer1.Start();
                 timer1.Interval = 4000;
                 status = YELLOW;
-                textBox1.Text = timer1.Interval.ToString();
                 
             }
             else if (status == YELLOW)
@@ -62,9 +61,8 @@ namespace semaforo
                 pictureBox1.Load("..\\..\\imagens\\green.png");
                 pictureBox2.Load("..\\..\\imagens\\pedestreRed.png");
                 timer1.Start();
-                timer1.Interval = 15000;
+                timer1.Interval = 7000;
                 status = GREEN;
-                textBox1.Text = GREENTEXT;
             }
             else if (status == GREEN)
             {
@@ -72,9 +70,8 @@ namespace semaforo
                 pictureBox1.Load("..\\..\\imagens\\red.png");
                 pictureBox2.Load("..\\..\\imagens\\pedestreGreen.png");
                 timer1.Start();
-                timer1.Interval = 7000;
+                timer1.Interval = 15000;
                 status = RED;
-                textBox1.Text = REDTEXT;
             }
         }
 
