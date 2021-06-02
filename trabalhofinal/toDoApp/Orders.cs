@@ -65,7 +65,8 @@ namespace toDoApp
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            InserirPedido ir = new InserirPedido();
+            ir.Show();
         }
     }
 }
