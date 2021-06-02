@@ -157,7 +157,7 @@ namespace urnaEletronica
             this.textBox1.Location = new System.Drawing.Point(95, 28);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 59);
+            this.textBox1.Size = new System.Drawing.Size(203, 52);
             this.textBox1.TabIndex = 13;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

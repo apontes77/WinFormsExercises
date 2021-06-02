@@ -50,5 +50,10 @@ namespace toDoApp
             Orders orders = new Orders();
             orders.Show();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -13,3 +13,4 @@ C:\Users\alepq\source\repos\ferramentas_visuais\trabalhofinal\toDoApp\bin\Debug\
 C:\Users\alepq\source\repos\ferramentas_visuais\trabalhofinal\toDoApp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\alepq\source\repos\ferramentas_visuais\trabalhofinal\toDoApp\obj\Debug\clientApi.csproj.CopyComplete
 C:\Users\alepq\source\repos\ferramentas_visuais\trabalhofinal\toDoApp\obj\Debug\toDoApp.Orders.resources
+C:\Users\alepq\source\repos\ferramentas_visuais\trabalhofinal\toDoApp\obj\Debug\toDoApp.InserirPedido.resources
