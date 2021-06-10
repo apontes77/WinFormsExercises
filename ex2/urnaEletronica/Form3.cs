@@ -31,23 +31,23 @@ namespace urnaEletronica
 
             this.GetCandidatos().Add(new Candidato("Joe Biden",
                                                 45,
-                                                @"C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\biden.png",
+                                                "..\\..\\imagens\\biden.png",
                                                 "PSDB",0));
             this.GetCandidatos().Add(new Candidato("Boris Johnson",
                                                     13,
-                                                    @"C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\johnson.png", 
+                                                    "..\\..\\imagens\\johnson.png", 
                                                     "Partido Conservador",0));
             this.GetCandidatos().Add(new Candidato("Xin Jin Ping",
                                                     16,
-                                                    @"C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\xin.png",
+                                                    "..\\..\\imagens\\xin.png",
                                                     "Partido Comunista Chinês",0));
             this.GetCandidatos().Add(new Candidato("Arthur Lira", 
                                                     24,
-                                                    @"C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\lira.png", 
+                                                    "..\\..\\imagens\\lira.png", 
                                                     "Partido Centrão",0));
             this.GetCandidatos().Add(new Candidato("Ronaldo Caiado",
                                                     25,
-                                                    @"C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\caiado.png",
+                                                    "..\\..\\imagens\\caiado.png",
                                                     "Democratas",0));
         }
 
@@ -70,10 +70,10 @@ namespace urnaEletronica
 
                     MessageBox.Show("Voto Registrado!");
 
-                }
-
+                } 
             }
-            pictureBox2.ImageLocation = @"C:\Users\alepq\source\repos\ferramentas_visuais\ex2\urnaEletronica\fim.png";
+            pictureBox2.ImageLocation = "..\\..\\imagens\\fim.png";
+            
             textBox1.Text = "";
             label1.Text = "";
             label2.Text = "";
@@ -82,9 +82,36 @@ namespace urnaEletronica
         }
         private void button14_Click(object sender, EventArgs e)
         {
+            encerraSessaoEAbreEstatisticas();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            MessageBox.Show("Insira o número do candidato!");
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pictureBox2.ImageLocation = "..\\..\\imagens\\fim.png";
+
+            textBox1.Text = "";
+            label1.Text = "";
+            label2.Text = "";
+            label3.Text = "";
+        }
+
+        private void encerraSessaoEAbreEstatisticas()
+        {
             MessageBox.Show("Sessão Encerrada!");
             Form2 form2 = new Form2(this);
             form2.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

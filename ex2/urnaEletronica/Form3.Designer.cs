@@ -115,16 +115,16 @@ namespace urnaEletronica
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(60, 437);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 13);
+            this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Nome Candidato";
+            this.label1.Text = "Candidato";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(41, 98);
+            this.pictureBox2.Location = new System.Drawing.Point(42, 48);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(454, 287);
+            this.pictureBox2.Size = new System.Drawing.Size(454, 354);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -153,10 +153,13 @@ namespace urnaEletronica
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(157, 61);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(95, 28);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(203, 52);
             this.textBox1.TabIndex = 13;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button13
             // 
@@ -277,6 +280,7 @@ namespace urnaEletronica
             this.button4.TabIndex = 3;
             this.button4.Text = "1";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -300,6 +304,7 @@ namespace urnaEletronica
             this.button2.TabIndex = 1;
             this.button2.Text = "CORRIGE";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -311,6 +316,7 @@ namespace urnaEletronica
             this.button1.TabIndex = 0;
             this.button1.Text = "BRANCO";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button14
             // 

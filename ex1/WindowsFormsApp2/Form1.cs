@@ -23,7 +23,7 @@ namespace WindowsFormsApp2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string strFilePath = @"C:\Users\alepq\source\repos\ferramentas_visuais\ex1\WindowsFormsApp2\contato.csv";
+            string strFilePath = "..\\..\\contato.csv";
             StringBuilder sbOutput = new StringBuilder();
 
             string[] dadosFormulario = new string[]
@@ -45,7 +45,7 @@ namespace WindowsFormsApp2
             sbOutput.AppendLine("\n");
             try
             {
-                //File.WriteAllText(strFilePath, sbOutput.ToString());
+              
                 File.AppendAllText(strFilePath, sbOutput.ToString());
                 
                 textBox1.Text = "";
@@ -61,9 +61,7 @@ namespace WindowsFormsApp2
             catch (Exception ex)
             {
                 Console.Write(ex.Message);
-            }
-
-           
+            }      
         }
 
         private void button1_Click(object sender, EventArgs e)
