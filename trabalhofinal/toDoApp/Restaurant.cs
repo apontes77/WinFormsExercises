@@ -17,7 +17,11 @@ namespace toDoApp
                 
         }
 
-       
-      
+        public Restaurant(long id, string restaurantName, string sloganRestaurant)
+        {
+            this.id = id;
+            this.restaurantName = restaurantName;
+            this.sloganRestaurant = sloganRestaurant;
+        }
     }
 }
