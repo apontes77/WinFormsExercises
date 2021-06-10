@@ -1,61 +1,47 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Net;
-using System.Net.Http;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace toDoApp
 {
     public partial class Orders : Form
     {
-
-        private static readonly string baseURL = "http://localhost:8082/api/v1/orders";
         public Orders()
         {
             InitializeComponent();
         }
 
-        public static async Task<string> GetAll()
+        private void btnBack_Click(object sender, EventArgs e)
         {
-
-            Order order = new Order();
-            using (HttpClient client = new HttpClient())
-            {
-                using (HttpResponseMessage res = await client.GetAsync(baseURL + "/all"))
-                {
-                    using (HttpContent content = res.Content)
-                    {
-                        string data = await content.ReadAsStringAsync();
-                        if (data != null)
-                        {
-                            return data;
-                        }
-                    }
-                }
-            }
-            return string.Empty;
+            Close();
         }
 
-        private async void button1_Click(object sender, EventArgs e)
+        private async void Orders_Load(object sender, EventArgs e)
         {
-            var ordersData = await Orders.GetAll();
+            var orderData = await OrderAPI.GetAll();
+            var result = JArray.Parse(orderData);
+            List<Order> lista = result.ToObject<List<Order>>();
 
-            DataTable dataGrid = (DataTable)JsonConvert.DeserializeObject(ordersData, (typeof(DataTable)));
-            dataGridView1.DataSource = dataGrid;
-        }
-
-        public void obtemPedidos(string data, string descricao, double preco)
-        {
+            lblDescription.Text = lista[0].description;
+            lblId.Text = lista[0].id.ToString();
+            lblDate.Text = lista[0].dateOrder.ToString();
+            lblPrice.Text = lista[0].price.ToString();
+            pictureOrder.Load(lista[0].dishPhoto);
             
+            pictureOrder.SizeMode = PictureBoxSizeMode.StretchImage; 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Orders_Shown(object sender, EventArgs e)
         {
-            InserirPedido ir = new InserirPedido();
-            ir.Show();
+            Refresh();
         }
     }
 }

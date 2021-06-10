@@ -8,14 +8,15 @@ namespace toDoApp
 {
     class Order
     {
-        public string description { get; set; }
-        public string dishPhoto { get; set; }
-        public string orderDate{ get; set; }
-        public double price { get; set; }
+        public long id { get; set; }
+        public String description { get; set; }
+        public DateTime dateOrder { get; set; }
+        public String dishPhoto { get; set; }
+        public Double price { get; set; }
 
-        public Order()
-        {
-                
+        public Order() 
+        { 
+            
         }
     }
 }
