@@ -29,31 +29,25 @@ namespace toDoApp
 
         private async void button2_Click(object sender, EventArgs e)
         {
-            var insertRestaurant = await RestaurantsAPI.PostRestaurant(textBox2.Text, textBox3.Text);
+            string URI = "http://localhost:8082/api/v1/restaurants";
+            Restaurant restaurant = new Restaurant();
+           
+            restaurant.restaurantName = textBox2.Text;
+            restaurant.sloganRestaurant = textBox3.Text;
 
-            if (insertRestaurant != null)
+            using (var client = new HttpClient())
             {
-                MessageBox.Show("Tudo certo!");
+                var serializedProduto = JsonConvert.SerializeObject(restaurant);
+                var content = new StringContent(serializedProduto, Encoding.UTF8, "application/json");
+                var result = await client.PostAsync(URI, content);
+                MessageBox.Show(result.ToString());
                 textBox2.Text = "";
                 textBox3.Text = "";
+                
             }
-            else
-            {
-                MessageBox.Show("Algum erro ocorreu no POST!");
-                textBox2.Text = "";
-                textBox3.Text = "";
-            }
-        }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Orders orders = new Orders();
-            orders.Show();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            
+            
         }
 
         private void button3_Click(object sender, EventArgs e)

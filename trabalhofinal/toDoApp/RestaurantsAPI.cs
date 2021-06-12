@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -31,21 +30,32 @@ namespace toDoApp
             return string.Empty;
         }
 
-        public static async Task<string> PostRestaurant(string restaurantNameParam, string restaurantSloganParam)
+        public static async Task<string> PostRestaurant(string restaurantName, string restaurantSlogan)
         {
 
-            Restaurant restaurant = new Restaurant();
-            restaurant.restaurantName = restaurantNameParam;
-            restaurant.sloganRestaurant = restaurantSloganParam;
 
-            using (var client = new HttpClient())
+            var inputData = new Dictionary<string, string>
             {
-                var serializedProduto = JsonConvert.SerializeObject(restaurant);
-                var content = new StringContent(serializedProduto, Encoding.UTF8, "application/json");
-                var result = await client.PostAsync(baseURL, content);
+                {"nameRestaurant", restaurantName },
+                {"sloganRestaurant", restaurantSlogan }
+            };
 
+            var input = new FormUrlEncodedContent(inputData);
+
+            using (HttpClient client = new HttpClient())
+            {
+                using (HttpResponseMessage res = await client.PostAsync(baseURL, input))
+                {
+                    using (HttpContent content = res.Content)
+                    {
+                        string data = await content.ReadAsStringAsync();
+                        if (data != null)
+                        {
+                            return data;
+                        }
+                    }
+                }
             }
-
             return string.Empty;
         }
     }
