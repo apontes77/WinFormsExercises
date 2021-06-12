@@ -119,7 +119,7 @@ namespace toDoApp
 
                 panel.Show();
 
-                if (Y + 188 >= this.Height)
+                if (Y + 188 >= this.Height - 188)
                 {
                     Y = 12;
                     X = X + 336;
@@ -128,7 +128,6 @@ namespace toDoApp
                     Y = Y + 188;
             }
             
-            pictureOrder.SizeMode = PictureBoxSizeMode.StretchImage; 
         }
 
         private void Orders_Shown(object sender, EventArgs e)
